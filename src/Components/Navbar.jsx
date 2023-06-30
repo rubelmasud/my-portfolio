@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { BsToggleOff, BsToggleOn } from "react-icons/bs";
+import './Navbar.css'
 
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, toggleDarkMode }) => {
     const [sticky, setSticky] = useState(false)
     const [open, setOpen] = useState(false)
 
@@ -38,6 +40,12 @@ const Navbar = () => {
                                 </li>
                             )
                         }
+                        <button
+                            className={`text-sm px-4 py-2 rounded focus:outline-none  ${isDarkMode ? 'text-white' : 'text-gray-800'}`}
+                            onClick={toggleDarkMode}
+                        >
+                            {isDarkMode ? <><BsToggleOn className="w-12 h-10" /></> : <><BsToggleOff className="w-12 h-10" /></>}
+                        </button>
                     </ul>
                 </div>
                 <div onClick={() => setOpen(!open)} className={`z-[999] md:hidden ${open ? 'text-gray-900' : 'text-gray-200'} m-5 text-3xl`}>
@@ -52,8 +60,15 @@ const Navbar = () => {
                                 </li>
                             )
                         }
+                        <button
+                            className={`text-sm px-4 py-2 rounded focus:outline-none  ${isDarkMode ? 'text-white' : 'text-gray-800'}`}
+                            onClick={toggleDarkMode}
+                        >
+                            {isDarkMode ? <><BsToggleOn className="w-12 h-10" /></> : <><BsToggleOff className="w-12 h-10" /></>}
+                        </button>
                     </ul>
                 </div>
+
             </div>
         </nav>
     );

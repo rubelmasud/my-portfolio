@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import About from './Components/About'
 import Bot from './Components/Bot'
@@ -11,11 +12,15 @@ import Project from './Components/Project'
 import Skills from './Components/Skills'
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   return (
-    <div>
-      <Navbar />
+    <div className={`app ${isDarkMode ? 'dark' : 'light'}`}>
+      <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Bot />
       <Hero />
       <About />

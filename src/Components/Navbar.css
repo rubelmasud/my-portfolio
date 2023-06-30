@@ -1,0 +1,10 @@
+.dark {
+    background-color: rgb(0, 0, 0);
+    color: rgba(0, 251, 255, 0.473);
+}
+
+
+
+.dark .text-white {
+    color: rgb(0, 200, 255);
+}
