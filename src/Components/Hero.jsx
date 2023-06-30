@@ -1,6 +1,8 @@
 import Typewriter from "react-ts-typewriter";
 import image from '../assets/IMG_0110-removebg-preview(3).png'
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
+import { GoDownload } from 'react-icons/go';
+import resume from '../assets/Rubel-Masud Web-Developer Resume (1).pdf'
 
 const Hero = () => {
 
@@ -24,8 +26,8 @@ const Hero = () => {
                             loop={true}
                         />
                     </h4>
-                    <a href="https://drive.google.com/file/d/1SG0gsHnf4X2mYWF795I4uE_4up8AAZ5o/view?usp=sharing" download >
-                        <button className="btn-primary text-white my-5 md:mx-0 ml-0">Download Resume</button>
+                    <a href={resume} download >
+                        <button className="btn-primary text-white my-5 md:mx-0 ml-0"><GoDownload className="font-bold animate-bounce text-xl" /> Download Resume</button>
                     </a>
                     <div className="flex gap-4 text-2xl md:justify-start justify-center items-center">
                         <a href='https://web.facebook.com/mdrubel.masud.7' className='text-gray-600 hover:text-white'> <BsFacebook /></a>

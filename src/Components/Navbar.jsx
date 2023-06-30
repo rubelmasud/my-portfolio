@@ -43,7 +43,7 @@ const Navbar = () => {
                 <div onClick={() => setOpen(!open)} className={`z-[999] md:hidden ${open ? 'text-gray-900' : 'text-gray-200'} m-5 text-3xl`}>
                     <ion-icon name='menu'></ion-icon>
                 </div>
-                <div className={`md:hidden absolute duration-700 text-gray-900 w-2/3 h-screen font-medium bg-white px-7 py-2 top-0 ${open ? 'right-0' : 'right-[-100%]'}`}>
+                <div className={`md:hidden absolute duration-700 text-gray-900 w-full text-center font-medium bg-white px-7 py-2 top-0 ${open ? 'right-0' : 'right-[-100%]'}`}>
                     <ul className="flex flex-col gap-10 py-2 justify-center h-full text-lg">
                         {
                             menuLinks?.map((menu, i) =>

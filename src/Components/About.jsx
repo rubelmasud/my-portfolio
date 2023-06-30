@@ -18,7 +18,8 @@ const About = () => {
                     <div className="">
                         <div className="text-gray-400 my-4 md:text-left text-center">
                             <p className='text-justify leading-7 w-11/12 '>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos, quam vel quisquam, explicabo sit labore dignissimos optio ratione quibusdam doloribus pariatur consequuntur sint. Reprehenderit cupiditate possimus facere quasi voluptatem?
+                                <span className='text-xl'>Hi , I am a Junior Web Developer </span><br /><br />
+                                a passionate and dedicated junior developer with a strong enthusiasm for coding and problem-solving. I thrive in dynamic and collaborative environments where I can contribute my skills and continuously learn from experienced professionals.
                             </p>
                             <div className="flex mt-10 items-center gap-7">
                                 {

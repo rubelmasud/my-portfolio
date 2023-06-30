@@ -12,7 +12,11 @@ const HireMe = () => {
                     </div>
                     <div className="md:text-left md:w-7/12 ">
                         <h4 className='md:text-3xl text-xl font-semibold mb-6'>Do you want any work from me?</h4>
-                        <p className='mb-8 text-[15px] text-gray-200'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis modi porro nulla dolorem labore possimus iste asperiores ea a odio, harum facere voluptas doloremque ad, tempore neque eius accusantium quas, magnam ullam numquam natus alias. ?</p>
+                        <p className='mb-8 text-[15px] text-gray-200'>Are you looking for a motivated and dedicated developer to join your team? Look no further! I am actively seeking exciting opportunities where I can contribute my skills and grow as a professional.
+                            <br />  <br />
+                            Thank you for considering me for potential opportunities, and I look forward to the possibility of working together!
+                        </p>
+
                         <button className="btn-primary text-white font-bold mx-auto md:mx-0 animate-bounce">Sey, Hello</button>
                     </div>
                 </div>
